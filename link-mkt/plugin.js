@@ -526,7 +526,7 @@ tinymce.PluginManager.add('link-mkt', function(editor, url) {
         getMetadata: function(){
             return {
                 name: 'link-mkt',
-                url: 'https://github.com/gabrielgisoldo/tinymce-link-mkt/blob/master/plugin.js'
+                url: 'https://github.com/gabrielgisoldo/tinymce-link-mkt'
             }
         }
     }
