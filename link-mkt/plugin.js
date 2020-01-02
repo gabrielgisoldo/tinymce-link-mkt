@@ -138,7 +138,7 @@ tinymce.PluginManager.add('link-mkt', function(editor, url) {
     Anchor.prototype.checkURL = function(){
         if(this.href){
             try{new URL(this.href)}
-            catch{return false}
+            catch(e){return false}
         }
         return true
     }
@@ -193,7 +193,7 @@ tinymce.PluginManager.add('link-mkt', function(editor, url) {
     Image.prototype.checkURL = function(){
         if(this.src){
             try{new URL(this.src)}
-            catch{return false}
+            catch(e){return false}
         }
         return true
     }
@@ -471,7 +471,6 @@ tinymce.PluginManager.add('link-mkt', function(editor, url) {
 
                     anchor.setChildren(image.getHTML())
                 }  else if (data.type == 'btn'){
-                    console
                     button.update(data)
                     anchor.setChildren(button.getHTML())
                 }
